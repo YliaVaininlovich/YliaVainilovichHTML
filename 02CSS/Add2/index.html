@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent1 {
+            background-color: cyan;
+            display: flex;
+            flex-direction: row;        
+        }
+        .parent2 {
+            background-color: cyan;
+            display: flex;
+            flex-direction: column;
+        }
+        .block1 {
+            width: 15em;
+            background-color: lightgray;
+            margin-bottom: 2em;
+        }
+        .block2 {
+            background-color: darkgray;
+            margin-bottom: 2em;
+        }
+        .footerblock {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent1">
+        <div class="block1" style="align-self:flex-start;">
+            <h1>Блок навигации</h1>
+            <b> Программа на Python</b>
+            <ul>
+                <li> часть 1</li>
+                <li> часть 2</li>
+                <li> часть 3</li>
+            </ul>
+            <h3><b> Часть 1</b></h3>
+            <ul>
+                <li>Наша первая программа</li>
+                <li>Пример цикла For</li>
+            </ul>
+        </div>
+        <div class="parent2">
+            <div class="block2">
+                <h1>Статья 1</h1>
+                <br>
+                Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+                Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+                состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+                для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+                программирование графических интерфейсов <ins>(GUI)</ins>. Давайте создадим простую программу прямо
+                сейчас.
+            </div>
+            <div class="block2">
+                <h1>Статья 2</h1>
+                <br>
+                Из множества существующих языков программирования Python — один из самых лёгких в изучении.
+                Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. Хотя Python входит в
+                состав большинства дистрибутивов Linux, на него часто не обращают внимания при выборе языка
+                для изучения. В этой статье мы рассмотрим создание консольных приложений, а в следующей —
+                программирование графических интерфейсов <ins>(GUI)</ins>. Давайте создадим простую программу прямо
+                сейчас.
+                <br>
+                <img src="/base3/icon_mail.png" style="float: right">
+            </div>
+        </div>
+    </div>
+    <div class="footerblock">
+        <em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В Python для
+        указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
+        программирования, а отступы.
+    </div>
+</body>
+
+</html>
