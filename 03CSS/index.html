@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul.menu>li {
+            float: left;
+            position: relative;
+            width: 110px;
+            top: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            display: block;
+            background-color: #4960fb;
+            border: 2px solid #9fa9ee;
+            border-radius: 3px 20px;
+            padding: 10px;
+        }
+
+        ul.menu>li>a:hover {
+            background-color: #eb9316;
+        }
+
+        ul.submenu {
+            position: absolute;
+            left: 0px;
+            display: none;
+            background-color: white;
+        }
+
+        ul.submenu>li {
+            display: block;
+        }
+
+        ul.submenu>li>a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            background-color: #4960fb;
+            border: 2px solid #9fa9ee;
+            border-radius: 3px 20px;
+            padding: 10px;
+        }
+
+        ul.submenu>li>a:hover {
+            background-color: #eb9316;
+        }
+
+        ul.menu>li:hover>ul.submenu {
+            display: block;
+        }
+
+        @media screen and (max-width: 677px) {
+            ul.menu>li {
+                clear: both;
+            }
+
+            ul.submenu {
+                left: 110px;
+                display: none;
+                top: -1px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li><a href="">Понедельник</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="">Вторник</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="">Среда</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="">Четверг</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="">Пятница</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="">Суббота</a>
+            <ul class="submenu">
+                <li><a href="#">Завтрак</a></li>
+                <li><a href="#">Обед</a></li>
+                <li><a href="#">Ужин</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
